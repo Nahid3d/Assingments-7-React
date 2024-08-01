@@ -1,0 +1,56 @@
+[
+    {
+      "recipe_image": "https://i.ibb.co/5438hxN/pixlr-image-generator-ff57168c-e872-4df8-9cb2-406d595fdbac.webp",
+      "recipe_id": 1,
+      "recipe_name": "Chicken Stir-Fry",
+      "short_description": "Quick and flavorful stir-fry",
+      "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaf", "400 g mushroom"],
+      "preparing_time": 30,
+      "calories": 320
+    },
+    {
+      "recipe_image": "https://i.ibb.co/8g9kDwB/pixlr-image-generator-ffd05bc5-8751-4844-9c86-8e38c4a43220.webp",
+      "recipe_id": 2,
+      "recipe_name": "Vegetable Curry",
+      "short_description": "Healthy and comforting curry",
+      "ingredients": ["200 g eggplant", "150 g chickpeas", "100 g spinach", "50 g coconut milk"],
+      "preparing_time": 45,
+      "calories": 250
+    },
+    {
+      "recipe_image": "https://i.ibb.co/HqNS4rH/pixlr-image-generator-350a42be-5313-4c94-9d3c-4e6b9cf48d6a.webp",
+      "recipe_id": 3,
+      "recipe_name": "Pasta Aglio e Olio",
+      "short_description": "Classic Italian pasta dish",
+      "ingredients": ["250 g pasta", "4 cloves garlic", "100 ml olive oil", "50 g parmesan cheese"],
+      "preparing_time": 20,
+      "calories": 400
+    },
+    {
+      "recipe_image": "https://i.ibb.co/3kqXqPR/pixlr-image-generator-b06e7ece-d673-4e10-b4cd-bb7feb98d0f4.webp",
+      "recipe_id": 4,
+      "recipe_name": "Salmon with Roasted Vegetables",
+      "short_description": "Healthy and delicious dinner",
+      "ingredients": ["200 g salmon fillet", "250 g mixed vegetables", "1 tablespoon olive oil", "1 lemon"],
+      "preparing_time": 35,
+      "calories": 350
+    },
+    {
+      "recipe_image": "https://i.ibb.co/Gxz5tJk/pixlr-image-generator-3c97d10d-dcc7-4379-ae60-434a1a292657.webp",
+      "recipe_id": 5,
+      "recipe_name": "Chocolate Chip Cookies",
+      "short_description": "Indulgent treat",
+      "ingredients": ["200 g flour", "100 g butter", "100 g sugar", "100 g chocolate chips"],
+      "preparing_time": 30,
+      "calories": 450
+    },
+    {
+      "recipe_image": "https://i.ibb.co/7JBCLhf/pixlr-image-generator-bfedb768-3c50-45bc-bf3a-cbeb32a05cd8.webp",
+      "recipe_id": 6,
+      "recipe_name": "Avocado Toast",
+      "short_description": "Quick and healthy breakfast",
+      "ingredients": ["2 slices bread", "1 avocado", "1 egg", "salt, pepper"],
+      "preparing_time": 15,
+      "calories": 220
+    }
+  ]
