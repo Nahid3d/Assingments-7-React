@@ -19,30 +19,19 @@ const Main = () => {
     }, []);
 
     const handleClick = (p) => {
-        // console.log(p)
-        // const isExist = info.find(item => item.id == p.id)
-        // if (!isExist) {
+        console.log(p.id)
+        const isExist = info.find(item => item.id == p.id)
+        if (!isExist) {
 
-        //     setInfo([...info, p])
+            setInfo([...info, p])
 
-        // }
-        // else {
-        //     alert('ady exists')
-        // }
-        // setInfo([p])
+        }
+        else {
+            alert('already exists')
+        }
 
-        // setInfo([...info,p])
-        const newInfo = [...info,p]
-        setInfo(newInfo)
 
     }
-
-
-
-
-
-
-
 
 
 
@@ -75,10 +64,10 @@ const Main = () => {
                     </div>
 
 
-                    <div className="info border ">
-                        <div className="border">
+                    <div className="info  ">
+                        <div className="">
                             <div>
-                                <h1>Want to cook: {card.length}</h1>
+                                <h1>Want to cook: {info.length}</h1>
                                 <hr />
                             </div>
                             <div>
@@ -88,7 +77,7 @@ const Main = () => {
                                     <p>Name</p>
                                     <p>Time</p>
                                     <p>Calories</p>
-                                    <p>Delete all
+                                    <p>Delete all item
 
                                     </p>
                                 </div>
@@ -101,7 +90,7 @@ const Main = () => {
                                             <p>{item.recipe_name.slice(0, 5)}</p>
                                             <p>{item.preparing_time}</p>
                                             <p>{item.calories}</p>
-                                            <button onClick={() => handleDelete(item.id)}>Delete</button>
+                                            <button onClick={() => handleDelete(item.id)}>Order</button>
 
                                         </div>
                                     ))
@@ -110,23 +99,21 @@ const Main = () => {
 
 
                         </div>
-                        {/* <div className="hidden">
-                    <h1>Currently cooling: 0</h1> <hr />
-
+                        <div className="mt-28 hidden">
+                            <hr />
+                    <h1>Currently cooling: {handleDelete.length}</h1> <hr />
+                            
                  </div>
                  <div>
-                    <div className="hidden">
+                    <div className=" justify-evenly mt-8 hidden">
+                        <p>count</p>
                     <p>Name</p>
                         <p>Time</p>
                         <p>Calories</p>
                     </div>
-                 </div> */}
-                        {/* <div className="hidden">
-                    <p>Total time =
-                        0 minutes
-                    </p>
-                    <p>Total Calories = 0</p>
-                 </div> */}
+                 </div>
+                 <hr />
+                     
                     </div>
                 </div>
 

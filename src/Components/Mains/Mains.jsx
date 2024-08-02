@@ -50,10 +50,8 @@ const Mains = ({card,handleClick}) => {
            <p className=" flex justify-center items-center gap-3"> <BsFire/> {card.calories} calories</p>
            </div>
         </div>
-        <button onClick={() => handleClick(card,card.id)}>Want to Cook</button>
-            {/* <p>
-            className="ml-5 rounded-full bg-green-400 text-black border-none "
-            </p> */}
+        <button onClick={() => handleClick(card)}  className='ml-5 rounded-full bg-green-400 text-black border-none' >Want to Cook</button>
+            
            
 
   </div>
