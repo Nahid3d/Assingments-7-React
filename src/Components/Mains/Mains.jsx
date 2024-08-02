@@ -1,9 +1,17 @@
+import PropTypes from 'prop-types'; // ES6
 import { IoTimeOutline } from 
+
+
 "react-icons/io5";
 import { BsFire } from "react-icons/bs";
 import './Mains.css'
+ "react-icons/cg";
 
-const Mains = ({card,recipe_name,short_description,preparing_time,calories,recipe_image,handelAdd}) => {
+
+const Mains = ({card,handleClick}) => {
+    const {recipe_image,recipe_name,short_description} = card;
+
+
     return (
         <div>
             <div>
@@ -13,15 +21,15 @@ const Mains = ({card,recipe_name,short_description,preparing_time,calories,recip
                     <div className="card w-96 shadow-xl">
   <figure className="rounded-2xl">
     <img
-      src={card.recipe_image} />
+      src={recipe_image} />
   </figure>
   <div className="card-body items-start">
     <h2 className="card-title text-2xl font-bold">
  
-    {card.recipe_name}
+    {recipe_name}
      
     </h2>
-    <p className="opacity-75 text-sm mt-4 mb-3">{card.short_description}</p>
+    <p className="opacity-75 text-sm mt-4 mb-3">{short_description}</p>
 
 
         <hr className="" />
@@ -38,12 +46,16 @@ const Mains = ({card,recipe_name,short_description,preparing_time,calories,recip
         <div className="flex w-[350px]">
            <div className="justify-around flex w-[350px] mb-3">
            <p className="flex justify-center items-center gap-3">  <IoTimeOutline /> {card.preparing_time} </p>
-          
-           
+    
            <p className=" flex justify-center items-center gap-3"> <BsFire/> {card.calories} calories</p>
            </div>
         </div>
-         <button onClick={()=>handelAdd(card)} className="ml-5 rounded-full bg-green-400 text-black border-none ">Want to Cook</button>
+        <button onClick={() => handleClick(card,card.id)}>Want to Cook</button>
+            {/* <p>
+            className="ml-5 rounded-full bg-green-400 text-black border-none "
+            </p> */}
+           
+
   </div>
 </div>
                     </div>
@@ -54,3 +66,7 @@ const Mains = ({card,recipe_name,short_description,preparing_time,calories,recip
 };
 
 export default Mains;
+Mains.propTypes = {
+    card: PropTypes.array,
+    handleClick: PropTypes.func,
+}
